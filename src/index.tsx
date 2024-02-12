@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
+import { GLOBAL } from './config'
+// @components
 import { GuestList } from './component/guest-list'
 import { Search } from './component/search-guest'
-import { GLOBAL } from './config'
+import { RefSearch } from './component/ref'
+import { Event } from './component/event'
 
 const el = document.getElementById('root')
 const root = ReactDOM.createRoot(el!)
@@ -13,7 +16,7 @@ const App = () => {
 
   return (
     <div>
-      <Search />
+      <RefSearch />
     </div>
   )
 }
